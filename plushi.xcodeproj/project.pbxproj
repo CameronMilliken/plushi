@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA62A17C223815BC000F69D6 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62A17B223815BC000F69D6 /* UserTableViewCell.swift */; };
+		CA62A17E22381602000F69D6 /* FriendFinderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62A17D22381602000F69D6 /* FriendFinderTableViewController.swift */; };
+		CA62A1802238168A000F69D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62A17F2238168A000F69D6 /* User.swift */; };
+		CA62A18222381B9B000F69D6 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62A18122381B9B000F69D6 /* UserController.swift */; };
+		CA62A18622382820000F69D6 /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62A18522382820000F69D6 /* PlaylistTableViewCell.swift */; };
+		CA62A188223828DF000F69D6 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62A187223828DF000F69D6 /* Playlist.swift */; };
+		CA62A18A22382946000F69D6 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62A18922382946000F69D6 /* Song.swift */; };
+		CA62A18C22382AA6000F69D6 /* PlaylistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62A18B22382AA6000F69D6 /* PlaylistTableViewController.swift */; };
+		CA62A18E22382B50000F69D6 /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62A18D22382B50000F69D6 /* PlaylistController.swift */; };
 		CA93000022373FA0009F5417 /* ColorBlend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA93FFFF22373FA0009F5417 /* ColorBlend.swift */; };
 		CA93000222377BF5009F5417 /* PopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA93000122377BF5009F5417 /* PopAnimation.swift */; };
 		CA9300042237820F009F5417 /* NonHighlightingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9300032237820F009F5417 /* NonHighlightingButton.swift */; };
@@ -25,6 +34,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA62A17B223815BC000F69D6 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		CA62A17D22381602000F69D6 /* FriendFinderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFinderTableViewController.swift; sourceTree = "<group>"; };
+		CA62A17F2238168A000F69D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CA62A18122381B9B000F69D6 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		CA62A18522382820000F69D6 /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
+		CA62A187223828DF000F69D6 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		CA62A18922382946000F69D6 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		CA62A18B22382AA6000F69D6 /* PlaylistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewController.swift; sourceTree = "<group>"; };
+		CA62A18D22382B50000F69D6 /* PlaylistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistController.swift; sourceTree = "<group>"; };
 		CA93000122377BF5009F5417 /* PopAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimation.swift; sourceTree = "<group>"; };
 		CA9300032237820F009F5417 /* NonHighlightingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonHighlightingButton.swift; sourceTree = "<group>"; };
 		CA93FFFD22373C8C009F5417 /* ImportAndFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportAndFriendViewController.swift; sourceTree = "<group>"; };
@@ -55,10 +73,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA62A18322381B9E000F69D6 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA62A18122381B9B000F69D6 /* UserController.swift */,
+				CA62A18D22382B50000F69D6 /* PlaylistController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		CA62A18422381BB4000F69D6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAA859D12236D4BA00C26CCA /* ViewControllers */,
+				CA62A18322381B9E000F69D6 /* ModelControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		CA99E97B2236F3F800CCF8B3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				CA99E9792236F2F200CCF8B3 /* OnboardingElement.swift */,
+				CA62A17F2238168A000F69D6 /* User.swift */,
+				CA62A187223828DF000F69D6 /* Playlist.swift */,
+				CA62A18922382946000F69D6 /* Song.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -85,7 +124,7 @@
 				CAA859D02236D4B300C26CCA /* Resources */,
 				CA99E97B2236F3F800CCF8B3 /* Models */,
 				CAA859D22236D4C100C26CCA /* Views */,
-				CAA859D12236D4BA00C26CCA /* ViewControllers */,
+				CA62A18422381BB4000F69D6 /* Controllers */,
 			);
 			path = plushi;
 			sourceTree = "<group>";
@@ -109,6 +148,8 @@
 				CADE6AD522371FBD000AC5C3 /* LoginViewController.swift */,
 				CA93FFFD22373C8C009F5417 /* ImportAndFriendViewController.swift */,
 				CADE6AD72237272B000AC5C3 /* FindAccountViewController.swift */,
+				CA62A17D22381602000F69D6 /* FriendFinderTableViewController.swift */,
+				CA62A18B22382AA6000F69D6 /* PlaylistTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -119,6 +160,8 @@
 				CAA859C22236D44300C26CCA /* Main.storyboard */,
 				CA99E9772236F11500CCF8B3 /* SignupCollectionViewCell.swift */,
 				CA99E9752236F07F00CCF8B3 /* OnboardingCollectionViewCell.swift */,
+				CA62A17B223815BC000F69D6 /* UserTableViewCell.swift */,
+				CA62A18522382820000F69D6 /* PlaylistTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,16 +250,25 @@
 			files = (
 				CADE6AD622371FBD000AC5C3 /* LoginViewController.swift in Sources */,
 				CA99E97A2236F2F200CCF8B3 /* OnboardingElement.swift in Sources */,
+				CA62A18222381B9B000F69D6 /* UserController.swift in Sources */,
 				CA93000222377BF5009F5417 /* PopAnimation.swift in Sources */,
 				CA9300042237820F009F5417 /* NonHighlightingButton.swift in Sources */,
+				CA62A17C223815BC000F69D6 /* UserTableViewCell.swift in Sources */,
+				CA62A17E22381602000F69D6 /* FriendFinderTableViewController.swift in Sources */,
+				CA62A18622382820000F69D6 /* PlaylistTableViewCell.swift in Sources */,
 				CAA859BF2236D44300C26CCA /* AppDelegate.swift in Sources */,
 				CADE6AD32237179C000AC5C3 /* CustomTextField.swift in Sources */,
+				CA62A1802238168A000F69D6 /* User.swift in Sources */,
+				CA62A188223828DF000F69D6 /* Playlist.swift in Sources */,
 				CAA859D42236E81400C26CCA /* OnboardingViewController.swift in Sources */,
 				CA99E9782236F11500CCF8B3 /* SignupCollectionViewCell.swift in Sources */,
+				CA62A18A22382946000F69D6 /* Song.swift in Sources */,
+				CA62A18C22382AA6000F69D6 /* PlaylistTableViewController.swift in Sources */,
 				CA93FFFE22373C8C009F5417 /* ImportAndFriendViewController.swift in Sources */,
 				CA99E9762236F07F00CCF8B3 /* OnboardingCollectionViewCell.swift in Sources */,
 				CADE6AD82237272B000AC5C3 /* FindAccountViewController.swift in Sources */,
 				CA93000022373FA0009F5417 /* ColorBlend.swift in Sources */,
+				CA62A18E22382B50000F69D6 /* PlaylistController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

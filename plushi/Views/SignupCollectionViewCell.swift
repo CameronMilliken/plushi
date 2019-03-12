@@ -19,7 +19,7 @@ class SignupCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var signupWithGoogleButton: UIButton!
 	
 	// Mark: - Params
-	var delegate: SignUpCollectionViewCellDelegate?
+	weak var delegate: SignUpCollectionViewCellDelegate?
 	
 	// Mark: - Lifecycle
 	override func awakeFromNib() {
