@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38D33FF48F26A7192FE9D48B /* Pods_plushi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA287BBD5D5C2E8542B8B92F /* Pods_plushi.framework */; };
+		B4FF045022382BBA00923F0F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4FF044F22382BBA00923F0F /* GoogleService-Info.plist */; };
+		B4FF045222382EC700923F0F /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF045122382EC700923F0F /* Firebase.swift */; };
+		B4FF0455223831B600923F0F /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF0454223831B600923F0F /* AppUser.swift */; };
 		CA93000022373FA0009F5417 /* ColorBlend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA93FFFF22373FA0009F5417 /* ColorBlend.swift */; };
 		CA93000222377BF5009F5417 /* PopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA93000122377BF5009F5417 /* PopAnimation.swift */; };
 		CA9300042237820F009F5417 /* NonHighlightingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9300032237820F009F5417 /* NonHighlightingButton.swift */; };
@@ -25,6 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B22CC452CB96D099E54A140 /* Pods-plushi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plushi.release.xcconfig"; path = "Pods/Target Support Files/Pods-plushi/Pods-plushi.release.xcconfig"; sourceTree = "<group>"; };
+		B4FF044F22382BBA00923F0F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B4FF045122382EC700923F0F /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		B4FF0454223831B600923F0F /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		BB05B1953E1545885289C050 /* Pods-plushi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plushi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-plushi/Pods-plushi.debug.xcconfig"; sourceTree = "<group>"; };
+		CA287BBD5D5C2E8542B8B92F /* Pods_plushi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plushi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA93000122377BF5009F5417 /* PopAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimation.swift; sourceTree = "<group>"; };
 		CA9300032237820F009F5417 /* NonHighlightingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonHighlightingButton.swift; sourceTree = "<group>"; };
 		CA93FFFD22373C8C009F5417 /* ImportAndFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportAndFriendViewController.swift; sourceTree = "<group>"; };
@@ -49,16 +59,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D33FF48F26A7192FE9D48B /* Pods_plushi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		346AEF4B9B18B0C227F7345F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA287BBD5D5C2E8542B8B92F /* Pods_plushi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4FF045322382ECC00923F0F /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				B4FF045122382EC700923F0F /* Firebase.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		C389CB0972F2FEAB0682B7E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB05B1953E1545885289C050 /* Pods-plushi.debug.xcconfig */,
+				8B22CC452CB96D099E54A140 /* Pods-plushi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CA99E97B2236F3F800CCF8B3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				CA99E9792236F2F200CCF8B3 /* OnboardingElement.swift */,
+				B4FF0454223831B600923F0F /* AppUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -68,6 +105,8 @@
 			children = (
 				CAA859BD2236D44300C26CCA /* plushi */,
 				CAA859BC2236D44300C26CCA /* Products */,
+				C389CB0972F2FEAB0682B7E1 /* Pods */,
+				346AEF4B9B18B0C227F7345F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +125,7 @@
 				CA99E97B2236F3F800CCF8B3 /* Models */,
 				CAA859D22236D4C100C26CCA /* Views */,
 				CAA859D12236D4BA00C26CCA /* ViewControllers */,
+				B4FF045322382ECC00923F0F /* Firebase */,
 			);
 			path = plushi;
 			sourceTree = "<group>";
@@ -97,6 +137,7 @@
 				CAA859C52236D44400C26CCA /* Assets.xcassets */,
 				CAA859C72236D44400C26CCA /* LaunchScreen.storyboard */,
 				CAA859CA2236D44400C26CCA /* Info.plist */,
+				B4FF044F22382BBA00923F0F /* GoogleService-Info.plist */,
 				CADE6AD4223717A2000AC5C3 /* CustomComponents */,
 			);
 			path = Resources;
@@ -141,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAA859CD2236D44400C26CCA /* Build configuration list for PBXNativeTarget "plushi" */;
 			buildPhases = (
+				610BE63B4668AA2045CA0410 /* [CP] Check Pods Manifest.lock */,
 				CAA859B72236D44300C26CCA /* Sources */,
 				CAA859B82236D44300C26CCA /* Frameworks */,
 				CAA859B92236D44300C26CCA /* Resources */,
+				F6D64031329BE65121514C70 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,19 +238,75 @@
 				CAA859C92236D44400C26CCA /* LaunchScreen.storyboard in Resources */,
 				CAA859C62236D44400C26CCA /* Assets.xcassets in Resources */,
 				CAA859C42236D44300C26CCA /* Main.storyboard in Resources */,
+				B4FF045022382BBA00923F0F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		610BE63B4668AA2045CA0410 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-plushi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6D64031329BE65121514C70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-plushi/Pods-plushi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-plushi/Pods-plushi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CAA859B72236D44300C26CCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4FF0455223831B600923F0F /* AppUser.swift in Sources */,
 				CADE6AD622371FBD000AC5C3 /* LoginViewController.swift in Sources */,
 				CA99E97A2236F2F200CCF8B3 /* OnboardingElement.swift in Sources */,
 				CA93000222377BF5009F5417 /* PopAnimation.swift in Sources */,
+				B4FF045222382EC700923F0F /* Firebase.swift in Sources */,
 				CA9300042237820F009F5417 /* NonHighlightingButton.swift in Sources */,
 				CAA859BF2236D44300C26CCA /* AppDelegate.swift in Sources */,
 				CADE6AD32237179C000AC5C3 /* CustomTextField.swift in Sources */,
@@ -360,10 +459,11 @@
 		};
 		CAA859CE2236D44400C26CCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB05B1953E1545885289C050 /* Pods-plushi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J8Z88H6B28;
+				DEVELOPMENT_TEAM = 64C9SBSJXP;
 				INFOPLIST_FILE = "$(SRCROOT)/plushi/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,10 +478,11 @@
 		};
 		CAA859CF2236D44400C26CCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B22CC452CB96D099E54A140 /* Pods-plushi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J8Z88H6B28;
+				DEVELOPMENT_TEAM = 64C9SBSJXP;
 				INFOPLIST_FILE = "$(SRCROOT)/plushi/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

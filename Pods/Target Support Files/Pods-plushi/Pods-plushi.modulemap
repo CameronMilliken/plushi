@@ -1,0 +1,6 @@
+framework module Pods_plushi {
+  umbrella header "Pods-plushi-umbrella.h"
+
+  export *
+  module * { export * }
+}
